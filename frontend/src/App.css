@@ -1,0 +1,519 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background: #12151E;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.backgroundImage {
+  background-image: url(./assets/backgroundImage.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.pinkButton {
+  width: 321px;
+  height: 67px; 
+  background: #F8EEEE;
+  border: 1px solid #F2EAEA;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  font-style: italic;
+  padding-left: 1%;
+}
+
+.smallpinkButton {
+  width: 371px;
+  height: 53px; 
+  background: #F8EEEE;
+  border: 1px solid #F2EAEA;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  font-style: italic;
+}
+.blackButton {
+  width: 321px;
+  height: 67px;
+  border: 1px solid #8B8787;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.blackFixedButton {
+  cursor: pointer;
+  width: 321px;
+  height: 67px;
+  border: 1px solid #8B8787;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFF;
+  margin: 10px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+
+  color: #ffffff;
+}
+
+.searchBar::placeholder {
+  font-family: 'inter';
+  font-style: italic;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: start;
+  color: #ccc;
+  vertical-align: middle;
+    transform:translate3d(0,-4px,0)
+
+}
+
+.wishlistInput::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: start;
+  color: grey;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+  vertical-align: middle;
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #FFFFFF;
+}
+
+.login-subtitle {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+
+  color: #FFFFFF
+}
+
+.register-subtitle {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+}
+
+.login-boldText {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+.login-text {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 311px;
+  height: 151px;
+}
+
+input[type='text'] {
+  color: white;
+  font-size: 20px;
+  padding-left: 1%;
+}
+
+input[type='password'] {
+  color: white;
+  font-size: 20px;
+  padding-left: 1%;
+}
+
+.logoPadding {
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2EAEA;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 45vw;
+  height: 50px;
+  background-color: #F2EAEA;
+  border-radius: 30px;
+  padding-left: 13%;
+}
+
+.wishlistInput {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: start;
+  color: black;
+  position: relative;
+  width: 400px;
+  height: 60px;
+  background-color: #F2EAEA;
+}
+
+.cardContainer {
+  width: 291px;
+  height: 454px;
+  background-color: #F2EAEA;
+  border-radius: 30px;
+}
+
+.cardImage {
+  width: 291px;
+  height: 360.37px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cardName {
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 44px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+.cardText {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.wishlisContainer {
+  width: 213px;
+  height: 640px;
+  background-color: #F2EAEA;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contentBody {
+  margin: 20px;
+  margin-top: 120px;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.wishlistText {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 3px;
+
+  color: #000000;
+}
+
+.rowCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searchResultText {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 44px;
+  margin-right: 10px;
+
+  color: #FFFFFF;
+}
+
+.searchResultBoldText{
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 44px;
+
+  color: #FFFFFF;
+}
+
+.movieTitle {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #FFFFFF;
+}
+
+.movieInfo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.movieSubtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+
+.movieText {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  margin-right: 10px;
+
+  color: #FFFFFF;
+}
+
+.movieGenreButton {
+  width: 159px;
+  height: 46px;
+  background-color: #F8EEEE;
+  border: 1px solid #F2EAEA;
+  border-radius: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24;
+  line-height: 44px;
+  margin: 10px;
+  margin-right: 10px;
+
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.commentInput {
+  width: 1023px;
+  height: 259px;
+  background-color:rgba(255, 255, 255, 0.1) ;
+  border: 1px solid #8B8787;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+  resize: none;
+}
+
+.rowBetween {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #F2EAEA;
+  border-radius: 35px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(25%);
+  top: calc(100vh - 85vh);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.profileSubTitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 20px;
+
+  color: #FFFFFF;
+}
+
+.filterButton {
+  cursor: pointer;
+  width: 102px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #8B8787;
+  border-radius: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
